@@ -170,7 +170,7 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Run Tests and Upload Coverage
         uses: Reloaded-Project/devops-rust-test-and-coverage@v1
@@ -240,7 +240,7 @@ jobs:
         target: [x86_64-pc-windows-gnu, i686-pc-windows-gnu]
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Run Tests and Coverage on WINE
         uses: Reloaded-Project/devops-rust-test-and-coverage@v1
@@ -257,7 +257,7 @@ jobs:
   build-research-tools:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Run Tests for Research Tools
         uses: Reloaded-Project/devops-rust-test-and-coverage@v1
